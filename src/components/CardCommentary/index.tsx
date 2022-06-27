@@ -1,9 +1,7 @@
-import React from 'react'
+import "./styles.css"
 
 const CardComentary = () => {
-  return (
-    <div>CardComentary</div>
-  )
-}
+  return <div className="card-commentary-content">CardComentary</div>;
+};
 
-export default CardComentary
+export default CardComentary;

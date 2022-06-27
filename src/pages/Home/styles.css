@@ -1,0 +1,15 @@
+.home-content {
+  display: flex;
+  justify-content: center;
+}
+
+.home-card-approve-button {
+  margin-right: 2rem;
+}
+
+.home-card-content {
+}
+
+.home-card-commentary {
+  margin-left: 2rem;
+}

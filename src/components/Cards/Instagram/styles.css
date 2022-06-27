@@ -5,10 +5,11 @@
 
 .instagram-card {
   background: #ffffff;
-  border: 0.0625rem solid #f2f2f2;
-  border-radius: 0.1875rem;
-  width: 100%;
-  max-width: 37.5rem;
+  border-radius: 3px;
+  border: 1px solid #e0e0e0;
+  box-shadow: #fff;
+  box-shadow: 0 1px 1px rgb(0 0 0 / 5%);
+  width: 37.5rem;
   margin: auto;
 }
 
