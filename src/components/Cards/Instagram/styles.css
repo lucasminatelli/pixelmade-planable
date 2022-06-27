@@ -1,83 +1,69 @@
+.instagram-content {
+  padding-bottom: 1.25rem;
+  color: #262626;
+}
+
 .instagram-card {
   background: #ffffff;
-  border: 1px solid #f2f2f2;
-  border-radius: 3px;
+  border: 0.0625rem solid #f2f2f2;
+  border-radius: 0.1875rem;
   width: 100%;
-  max-width: 600px;
+  max-width: 37.5rem;
   margin: auto;
 }
 
 .instagram-card-header {
-  padding: 20px;
-  height: 40px;
+  padding: 1.25rem;
+  height: 2.5rem;
+  display: flex;
+}
+
+.instagram-card-user-content {
+  margin-left: 1.25rem;
+}
+
+.instagram-card-user-name {
+  font-weight: bold;
+ 
+}
+
+.instagram-card-time {
+  text-align: left;
+  color: #999;
 }
 
 .instagram-card-user-image {
   border-radius: 50%;
-  width: 40px;
-  height: 40px;
+  width: 2.5rem;
+  height: 2.5rem;
   vertical-align: middle;
 }
 
-.instagram-card-time {
-  float: right;
-  width: 80px;
-  padding-top: 10px;
-  text-align: right;
-  color: #999;
-}
-
-.instagram-card-user-name {
-  margin-left: 20px;
-  font-weight: bold;
-  color: #262626;
-}
-
 .instagram-card-content {
-  padding: 20px;
-}
-
-.likes {
-  font-weight: bold;
+  padding: 1.25rem;
 }
 
 .instagram-card-content-user {
-  font-weight: bold;
-  color: #262626;
 }
 
 .hashtag {
   color: #003569;
 }
 
-.comments {
-  color: #999;
-}
-
-.user-comment {
-  color: #003569;
-}
-
-.instagram-card-footer {
-  padding: 20px;
-  display: flex;
-  align-items: center;
-}
-
-hr {
-  border: none;
-  border-bottom: 1px solid #ccc;
-  margin-top: 30px;
-  margin-bottom: 0px;
-}
-
-.footer-action-icons {
-  font-size: 16px;
-  color: #ccc;
-}
-
-.comments-input {
-  border: none;
-  margin-left: 10px;
+.instagram-card-image {
+  background-color: black;
+  position: relative;
+  height: 37.5rem;
   width: 100%;
+  overflow: hidden;
+}
+
+.instagram-card-image img {
+  width: 100%;
+  height: auto;
+  overflow: hidden;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  margin: auto;
 }

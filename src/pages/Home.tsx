@@ -2,16 +2,14 @@ import Instagram from "../components/Cards/Instagram";
 import { useGetPostsQuery } from "../graphql/generated";
 
 const Home = () => {
+  // Hooks
   const { data } = useGetPostsQuery();
-  if (!data) return <h1>Houve um erro!</h1>;
-  return (
-    <>
-      {data &&
-        data.posts.map((post: any, index: number) => (
-          <Instagram key={index} post={post} />
-        ))}
-    </>
-  );
+  
+  // Render
+  if (!data) return <h3>Não há dados carregados</h3>;
+  return data?.posts.map((post, index: number) => {
+    if (post) return <Instagram key={index} post={post} />;
+  });
 };
 
 export default Home;

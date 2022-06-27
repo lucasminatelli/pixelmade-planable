@@ -1,50 +1,36 @@
 import "./styles.css";
 
-const Instagram = (post: any) => {
-  console.log(post);
+const Instagram = (props: any) => {
   return (
-    <>
-      {post && (
-        <div className="instagram-card">
-          <div className="instagram-card-header">
-            <img src="" className="instagram-card-user-image" />
-            <a className="instagram-card-user-name"></a>
-            <div className="instagram-card-time"></div>
-          </div>
-
-          <div className="intagram-card-image">
-            <img src="" height="600px" />
-          </div>
-
-          <div className="instagram-card-content">
-            <p className="likes"></p>
-            <p>
-              <a className="instagram-card-content-user" href=""></a>
-              <a className="hashtag" href=""></a>
-            </p>
-            <p className="comments"></p>
-            <a className="user-comment" href=""></a>
-            <a className="user-comment" href=""></a>
-            <a className="user-comment" href=""></a>
-            <hr />
-          </div>
-
-          <div className="instagram-card-footer">
-            <a className="footer-action-icons" href="#">
-              <i className="fa fa-heart-o"></i>
-            </a>
-            <input
-              className="comments-input"
-              type="text"
-              placeholder=""
-            />
-            <a className="footer-action-icons" href="#">
-              <i className="fa fa-ellipsis-h"></i>
-            </a>
+    <div className="instagram-content">
+      <div className="instagram-card">
+        <div className="instagram-card-header">
+          <img
+            src={props.post?.author.picture?.url}
+            className="instagram-card-user-image"
+          />
+          <div className="instagram-card-user-content">
+            <p className="instagram-card-user-name">{props.post.author.name}</p>
+            <span className="instagram-card-time">
+              {props.post.publishedAt}
+            </span>
           </div>
         </div>
-      )}
-    </>
+
+        <div className="instagram-card-image">
+          <img src={props.post.coverImage.url} />
+        </div>
+
+        <div className="instagram-card-content">
+          <p>
+            <span className="instagram-card-content-user">
+              {props.post.title}
+            </span>
+            <a className="hashtag" href=""></a>
+          </p>
+        </div>
+      </div>
+    </div>
   );
 };
 
