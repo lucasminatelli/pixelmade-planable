@@ -2,7 +2,7 @@ import "./styles.css";
 
 const Instagram = (props: any) => {
   return (
-    <div className="instagram-content">
+    <div id={props.post.slug} className="instagram-content">
       <div className="instagram-card">
         <div className="instagram-card-header">
           <img
@@ -22,11 +22,9 @@ const Instagram = (props: any) => {
         </div>
 
         <div className="instagram-card-content">
-          <p>
-            <span className="instagram-card-content-user">
-              {props.post.title}
-            </span>
-            <a className="hashtag" href=""></a>
+          <p className="instagram-card-content-user">
+            {props.post.title}
+            <span className="hashtag"> {props.post.tags}</span>
           </p>
         </div>
       </div>

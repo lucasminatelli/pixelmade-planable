@@ -2,6 +2,8 @@ query GetPosts{
   posts {
     publishedAt
     title
+    tags
+    slug
     coverImage {
       url
     }

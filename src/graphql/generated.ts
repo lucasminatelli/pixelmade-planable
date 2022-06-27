@@ -5829,7 +5829,7 @@ export enum _SystemDateTimeFieldVariation {
 export type GetPostsQueryVariables = Exact<{ [key: string]: never; }>;
 
 
-export type GetPostsQuery = { __typename?: 'Query', posts: Array<{ __typename?: 'Post', publishedAt?: any | null, title: string, coverImage?: { __typename?: 'Asset', url: string } | null, author?: { __typename?: 'Author', name: string, picture?: { __typename?: 'Asset', url: string } | null } | null }> };
+export type GetPostsQuery = { __typename?: 'Query', posts: Array<{ __typename?: 'Post', publishedAt?: any | null, title: string, tags: Array<string>, slug: string, coverImage?: { __typename?: 'Asset', url: string } | null, author?: { __typename?: 'Author', name: string, picture?: { __typename?: 'Asset', url: string } | null } | null }> };
 
 
 export const GetPostsDocument = gql`
@@ -5837,6 +5837,8 @@ export const GetPostsDocument = gql`
   posts {
     publishedAt
     title
+    tags
+    slug
     coverImage {
       url
     }
