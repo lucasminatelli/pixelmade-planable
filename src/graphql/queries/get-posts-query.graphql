@@ -1,0 +1,15 @@
+query GetPosts{
+  posts {
+    publishedAt
+    title
+    coverImage {
+      url
+    }
+    author {
+      name
+      picture {
+        url
+      }
+    }
+  }
+}
