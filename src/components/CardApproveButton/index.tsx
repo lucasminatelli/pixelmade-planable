@@ -1,11 +1,11 @@
-import "./styles.css";
+import { CheckCircle, XCircle } from "phosphor-react";
 
 const CardApproveButton = () => {
   return (
-    <div className="card-approve-button-content">
-      <button>Aprovar</button>
-      <button>Reprovar</button>
-    </div>
+    <>
+      <CheckCircle size={36} color="green" />
+      <XCircle size={36} color="red" />
+    </>
   );
 };
 
